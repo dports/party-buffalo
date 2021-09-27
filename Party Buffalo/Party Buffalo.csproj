@@ -52,6 +52,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Party_Buffalo.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WindowsAPICodePack.1.1.0\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
@@ -461,9 +464,8 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
-  -->
   <PropertyGroup>
     <PostBuildEvent>if $(ConfigurationName) == Release (
 "C:\Program Files\Microsoft\ILMerge\ILMerge.exe" /out:"C:\Users\Lander\Desktop\Party Buffalo Final\Party Buffalo.exe" "$(TargetDir)Party Buffalo.exe" "$(TargetDir)CLKsFATXLib.dll" "$(TargetDir)Microsoft.WindowsAPICodePack.dll" "$(TargetDir)Microsoft.WindowsAPICodePack.Shell.dll")</PostBuildEvent>
-  </PropertyGroup>
+  </PropertyGroup>-->
 </Project>
